@@ -4,10 +4,10 @@
 	<title>Новинки | Интернет-магазин Северяночка</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="assets/libs/Swiper/swiper-bundle.min.css?_v=20230811170036" />
-	<link rel="stylesheet" href="assets/libs/Choices/choices.min.css?_v=20230811170036">
-	<link rel="stylesheet" href="assets/libs/nouiSlider/nouislider.min.css?_v=20230811170036">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230811170036">
+	<link rel="stylesheet" href="assets/libs/Swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="assets/libs/Choices/choices.min.css">
+	<link rel="stylesheet" href="assets/libs/nouiSlider/nouislider.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -22,7 +22,7 @@
 		<div class="header-wrapper">
 			<div class="header-logo">
 				<a href="index.html" class="link-logo">
-					<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Лого Серебряночка" class="logo-img"></picture>
+					<img src="img/logo.png" alt="Лого Серебряночка" class="logo-img">
 					<span class="header-logo__span">Северяночка</span>
 				</a>
 			</div>
@@ -33,7 +33,7 @@
 			</div>
 			<div class="header-serch__block">
 				<form action="#" class="header-search">
-					<input id="input-search" type="text" name="search" class="header-search__input" placeholder="Найти товар"
+					<input id="header-input" type="text" name="search" class="header-search__input" placeholder="Найти товар"
 						autocomplete="off">
 					<button for="header-input" class="_icon-search btn-search"></button>
 				</form>
@@ -94,48 +94,22 @@
 	</div>
 
 	<div class="header-catalog">
-		<div class="container">
-			<div class="header-catalog__wrapper">
-				<nav class="header-catalog__menu">
-					<ul class="header-catalog__list">
-						<li class="header-catalog__item"><a href="html/milk-cheese-egg.html" class="header-catalog__link">Молоко.
-								сыр. яйцо</a>
-						</li>
-						<li class="header-catalog__item"><a href="html/bread.html" class="header-catalog__link">Хлеб</a>
-						</li>
-						<li class="header-catalog__item"><a href="html/fruits-vegetables.html" class="header-catalog__link">Фрукты и
-								овощи</a></li>
-						<li class="header-catalog__item"><a href="html/frozen-foods.html" class="header-catalog__link">Замороженные
-								продукты</a>
-						</li>
-					</ul>
-					<ul class="header-catalog__list">
-						<li class="header-catalog__item"><a href="html/drinks.html" class="header-catalog__link">Напитки</a></li>
-						<li class="header-catalog__item"><a href="html/confectionery-products.html"
-								class="header-catalog__link">Кондитерские изделия</a>
-						</li>
-						<li class="header-catalog__item"><a href="html/tea-coffee.html" class="header-catalog__link">Чай.
-								кофе</a></li>
-					</ul>
-					<ul class="header-catalog__list">
-						<li class="header-catalog__item"><a href="html/grocery.html" class="header-catalog__link">Бакалея</a></li>
-						<li class="header-catalog__item"><a href="html/healthy-eating.html" class="header-catalog__link">Здоровое
-								питание</a></li>
-						<li class="header-catalog__item"><a href="html/pet-supplies.html" class="header-catalog__link">Зоотовары</a>
-						</li>
-					</ul>
-					<ul class="header-catalog__list">
-						<li class="header-catalog__item"><a href="html/non-food-products.html"
-								class="header-catalog__link">Непродовольственные товары</a>
-						</li>
-						<li class="header-catalog__item"><a href="html/baby-food.html" class="header-catalog__link">Детское
-								питание</a></li>
-						<li class="header-catalog__item"><a href="html/meat-poultry-sausage.html" class="header-catalog__link">Мясо.
-								птица. колбаса</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
+		<nav class="header-catalog__menu container">
+			<ul class="header-catalog__list">
+				<li class="header-catalog__item"><a href="html/meat-poultry-sausage.html" class="header-catalog__link">Мясо.
+						птица. колбаса</a></li>
+				<li class="header-catalog__item"><a href="html/meat-poultry-sausage.html" class="header-catalog__link">Мясо.
+						птица. колбаса</a></li>
+				<li class="header-catalog__item"><a href="html/meat-poultry-sausage.html" class="header-catalog__link">Мясо.
+						птица. колбаса</a></li>
+				<li class="header-catalog__item"><a href="html/meat-poultry-sausage.html" class="header-catalog__link">Мясо.
+						птица. колбаса</a></li>
+				<li class="header-catalog__item"><a href="html/meat-poultry-sausage.html" class="header-catalog__link">Мясо.
+						птица. колбаса</a></li>
+				<li class="header-catalog__item"><a href="html/meat-poultry-sausage.html" class="header-catalog__link">Мясо.
+						птица. колбаса</a></li>
+			</ul>
+		</nav>
 	</div>
 </header>
     <main class="main">
@@ -164,7 +138,7 @@
 	<div class="container">
 		<div class="footer__content">
 			<nav class="footer__menu">
-				<a href="index.html" class="footer__logo-link"><picture><source srcset="img/logo-footer.webp" type="image/webp"><img src="img/logo-footer.png" alt="" class="footer__logo"></picture></a>
+				<a href="index.html" class="footer__logo-link"><img src="img/logo-footer.png" alt="" class="footer__logo"></a>
 				<ul class="footer__menu-list">
 					<li class="footer__menu-item"><a href="about.html" class="footer__menu-link">О компании</a></li>
 					<li class="footer__menu-item"><a href="contacts.html" class="footer__menu-link">Контакты</a></li>
@@ -193,8 +167,8 @@
     <div class="menu-fixed"></div>
     <div class="btn-up">↑</div>
   </div>
-  <script src="assets/libs/inputMask/inputmask.min.js?_v=20230811170036"></script>
-<script src="js/main.min.js?_v=20230811170036"></script>
+  <script src="assets/libs/inputMask/inputmask.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 
 </html>

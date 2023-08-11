@@ -4,10 +4,10 @@
 	<title>Лучшие продукты | Интернет-магазин Северяночка</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="assets/libs/Swiper/swiper-bundle.min.css?_v=20230811170036" />
-	<link rel="stylesheet" href="assets/libs/Choices/choices.min.css?_v=20230811170036">
-	<link rel="stylesheet" href="assets/libs/nouiSlider/nouislider.min.css?_v=20230811170036">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230811170036">
+	<link rel="stylesheet" href="assets/libs/Swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="assets/libs/Choices/choices.min.css">
+	<link rel="stylesheet" href="assets/libs/nouiSlider/nouislider.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -22,7 +22,7 @@
 		<div class="header-wrapper">
 			<div class="header-logo">
 				<a href="index.html" class="link-logo">
-					<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Лого Серебряночка" class="logo-img"></picture>
+					<img src="img/logo.png" alt="Лого Серебряночка" class="logo-img">
 					<span class="header-logo__span">Северяночка</span>
 				</a>
 			</div>
@@ -33,7 +33,7 @@
 			</div>
 			<div class="header-serch__block">
 				<form action="#" class="header-search">
-					<input id="input-search" type="text" name="search" class="header-search__input" placeholder="Найти товар"
+					<input id="header-input" type="text" name="search" class="header-search__input" placeholder="Найти товар"
 						autocomplete="off">
 					<button for="header-input" class="_icon-search btn-search"></button>
 				</form>
@@ -94,53 +94,27 @@
 	</div>
 
 	<div class="header-catalog">
-		<div class="container">
-			<div class="header-catalog__wrapper">
-				<nav class="header-catalog__menu">
-					<ul class="header-catalog__list">
-						<li class="header-catalog__item"><a href="html/milk-cheese-egg.html" class="header-catalog__link">Молоко.
-								сыр. яйцо</a>
-						</li>
-						<li class="header-catalog__item"><a href="html/bread.html" class="header-catalog__link">Хлеб</a>
-						</li>
-						<li class="header-catalog__item"><a href="html/fruits-vegetables.html" class="header-catalog__link">Фрукты и
-								овощи</a></li>
-						<li class="header-catalog__item"><a href="html/frozen-foods.html" class="header-catalog__link">Замороженные
-								продукты</a>
-						</li>
-					</ul>
-					<ul class="header-catalog__list">
-						<li class="header-catalog__item"><a href="html/drinks.html" class="header-catalog__link">Напитки</a></li>
-						<li class="header-catalog__item"><a href="html/confectionery-products.html"
-								class="header-catalog__link">Кондитерские изделия</a>
-						</li>
-						<li class="header-catalog__item"><a href="html/tea-coffee.html" class="header-catalog__link">Чай.
-								кофе</a></li>
-					</ul>
-					<ul class="header-catalog__list">
-						<li class="header-catalog__item"><a href="html/grocery.html" class="header-catalog__link">Бакалея</a></li>
-						<li class="header-catalog__item"><a href="html/healthy-eating.html" class="header-catalog__link">Здоровое
-								питание</a></li>
-						<li class="header-catalog__item"><a href="html/pet-supplies.html" class="header-catalog__link">Зоотовары</a>
-						</li>
-					</ul>
-					<ul class="header-catalog__list">
-						<li class="header-catalog__item"><a href="html/non-food-products.html"
-								class="header-catalog__link">Непродовольственные товары</a>
-						</li>
-						<li class="header-catalog__item"><a href="html/baby-food.html" class="header-catalog__link">Детское
-								питание</a></li>
-						<li class="header-catalog__item"><a href="html/meat-poultry-sausage.html" class="header-catalog__link">Мясо.
-								птица. колбаса</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
+		<nav class="header-catalog__menu container">
+			<ul class="header-catalog__list">
+				<li class="header-catalog__item"><a href="html/meat-poultry-sausage.html" class="header-catalog__link">Мясо.
+						птица. колбаса</a></li>
+				<li class="header-catalog__item"><a href="html/meat-poultry-sausage.html" class="header-catalog__link">Мясо.
+						птица. колбаса</a></li>
+				<li class="header-catalog__item"><a href="html/meat-poultry-sausage.html" class="header-catalog__link">Мясо.
+						птица. колбаса</a></li>
+				<li class="header-catalog__item"><a href="html/meat-poultry-sausage.html" class="header-catalog__link">Мясо.
+						птица. колбаса</a></li>
+				<li class="header-catalog__item"><a href="html/meat-poultry-sausage.html" class="header-catalog__link">Мясо.
+						птица. колбаса</a></li>
+				<li class="header-catalog__item"><a href="html/meat-poultry-sausage.html" class="header-catalog__link">Мясо.
+						птица. колбаса</a></li>
+			</ul>
+		</nav>
 	</div>
 </header>
 		<main class="main">
 			<div class="promotion">
-				<picture><source srcset="img/Sliders.webp" type="image/webp"><img src="img/Sliders.jpg" alt="promotion"></picture>
+				<img src="img/Sliders.jpg" alt="promotion">
 			</div>
 			<div class="container">
 				<div class="main-wrapper">
@@ -156,7 +130,7 @@
 									<p class="special-offer__item-text">И получайте бонусы при покупке в магазинах и на сайте</p>
 								</div>
 								<div class="special-offer__item">
-									<picture><source srcset="img/Карта-лояльности.webp" type="image/webp"><img class="special-offer__img" src="img/Карта-лояльности.png" alt="Карта лояльности"></picture>
+									<img class="special-offer__img" src="img/Карта-лояльности.png" alt="Карта лояльности">
 								</div>
 							</div>
 							<div class="special-offer__block special-offer__block-2">
@@ -165,11 +139,11 @@
 									<p class="special-offer__item-text">И получайте вдвое больше бонусов</p>
 								</div>
 								<div class="special-offer__item item-block-2">
-									<picture><source srcset="img/корзина.webp" type="image/webp"><img class="special-offer__img" src="img/корзина.png" alt="Корзина"></picture>
-									<span class="item-block-2__span-1"><picture><source srcset="img/Рубль.webp" type="image/webp"><img src="img/Рубль.png" alt="Рубль"></picture></span>
-									<span class="item-block-2__span-2"><picture><source srcset="img/Рубль.webp" type="image/webp"><img src="img/Рубль.png" alt="Рубль"></picture></span>
-									<span class="item-block-2__span-3"><picture><source srcset="img/Рубль.webp" type="image/webp"><img src="img/Рубль.png" alt="Рубль"></picture></span>
-									<span class="item-block-2__span-4"><picture><source srcset="img/Рубль.webp" type="image/webp"><img src="img/Рубль.png" alt="Рубль"></picture></span>
+									<img class="special-offer__img" src="img/корзина.png" alt="Корзина">
+									<span class="item-block-2__span-1"><img src="img/Рубль.png" alt="Рубль"></span>
+									<span class="item-block-2__span-2"><img src="img/Рубль.png" alt="Рубль"></span>
+									<span class="item-block-2__span-3"><img src="img/Рубль.png" alt="Рубль"></span>
+									<span class="item-block-2__span-4"><img src="img/Рубль.png" alt="Рубль"></span>
 								</div>
 							</div>
 						</div>
@@ -198,7 +172,7 @@
 						</div>
 						<div class="article__content">
 							<div class="article__block">
-								<a href="" class="article__img-link"><picture><source srcset="img/article1.webp" type="image/webp"><img src="img/article1.jpg" alt="Статья" class="article__img"></picture></a>
+								<a href="" class="article__img-link"><img src="img/article1.jpg" alt="Статья" class="article__img"></a>
 								<div class="article__block-content">
 									<span class="article__data">05.03.2021</span>
 									<h4 class="article__block-title">Режим использования масок и перчаток на территории магазинов</h4>
@@ -208,7 +182,7 @@
 								</div>
 							</div>
 							<div class="article__block">
-								<a href="" class="article__img-link"><picture><source srcset="img/article2.webp" type="image/webp"><img src="img/article2.jpg" alt="Статья" class="article__img"></picture></a>
+								<a href="" class="article__img-link"><img src="img/article2.jpg" alt="Статья" class="article__img"></a>
 								<div class="article__block-content">
 									<span class="article__data">05.03.2021</span>
 									<h4 class="article__block-title">Весеннее настроение для каждой</h4>
@@ -218,7 +192,7 @@
 								</div>
 							</div>
 							<div class="article__block">
-								<a href="" class="article__img-link"><picture><source srcset="img/article3.webp" type="image/webp"><img src="img/article3.jpg" alt="Статья" class="article__img"></picture></a>
+								<a href="" class="article__img-link"><img src="img/article3.jpg" alt="Статья" class="article__img"></a>
 								<div class="article__block-content">
 									<span class="article__data">05.03.2021</span>
 									<h4 class="article__block-title">ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!</h4>
@@ -236,7 +210,7 @@
 	<div class="container">
 		<div class="footer__content">
 			<nav class="footer__menu">
-				<a href="index.html" class="footer__logo-link"><picture><source srcset="img/logo-footer.webp" type="image/webp"><img src="img/logo-footer.png" alt="" class="footer__logo"></picture></a>
+				<a href="index.html" class="footer__logo-link"><img src="img/logo-footer.png" alt="" class="footer__logo"></a>
 				<ul class="footer__menu-list">
 					<li class="footer__menu-item"><a href="about.html" class="footer__menu-link">О компании</a></li>
 					<li class="footer__menu-item"><a href="contacts.html" class="footer__menu-link">Контакты</a></li>
@@ -266,14 +240,14 @@
 		<div class="btn-up">↑</div>
 
 	</div>
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=b756749a-c9d8-4f04-a6c7-2653f5d9d0b7&lang=ru_RU&_v=20230811170036"
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=b756749a-c9d8-4f04-a6c7-2653f5d9d0b7&lang=ru_RU"
 		type="text/javascript">
 		</script>
 	<!-- b756749a-c9d8-4f04-a6c7-2653f5d9d0b7 -->
-	<script src="assets/libs/Swiper/swiper-bundle.min.js?_v=20230811170036"></script>
-	<script src="assets/js/map.js?_v=20230811170036"></script>
-	<script src="assets/libs/inputMask/inputmask.min.js?_v=20230811170036"></script>
-<script src="js/main.min.js?_v=20230811170036"></script>
+	<script src="assets/libs/Swiper/swiper-bundle.min.js"></script>
+	<script src="assets/js/map.js"></script>
+	<script src="assets/libs/inputMask/inputmask.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 
 </html>
