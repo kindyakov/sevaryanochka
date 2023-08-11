@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Админ панель | Интернет-магазин Северяночка</title>
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/style.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="admin">
+    <header class="admin__header">
+      <div class="admin__header-content">
+        <div class="admin__header-page">
+          <a href="admin.html" class="admin__header-link _active">Администрирование</a>
+          <a href="index.html" class="admin__header-link">Сайт</a>
+        </div>
+      </div>
+    </header>
+    <div class="admin__wrapper">
+      <aside class="admin__aside">
+        <ul class="admin__aside-list">
+          <li class="admin__aside-th"><a href="#product" class="admin__aside-tab">Продукты</a></li>
+          <li class="admin__aside-th"><a href="#brand" class="admin__aside-tab">Бренды</a></li>
+          <li class="admin__aside-th"><a href="#type" class="admin__aside-tab">Типы</a></li>
+          <li class="admin__aside-th"><a href="#feedback" class="admin__aside-tab">Отзывы</a></li>
+          <li class="admin__aside-th"><a href="#user" class="admin__aside-tab">Пользователи</a></li>
+          <li class="admin__aside-th"><a href="#article" class="admin__aside-tab">Статьи</a></li>
+        </ul>
+      </aside>
+      <main class="admin__main">
+        <div class="admin__content" id="product">
+          <h2 class="admin__title">Продукты</h2>
+          <div class="admin__menu">
+            <input type="text" name="search" id="search_product" class="admin__menu_input _input" autocomplete="off"
+              placeholder="поиск">
+            <div>
+              <button class="admin__menu_button delete" data-delete="product">Удалить</button>
+              <button class="admin__menu_button update" data-updata="product">Редактировать</button>
+              <button class="admin__menu_button create" data-create="product">Добавить продукт</button>
+            </div>
+          </div>
+          <div class="admin__wrapper-table">
+            <table class="admin__table">
+              <thead class="admin__table_thead">
+                <tr class="admin__table_row">
+                  <th class="admin__table_title _checkbox"><label for="checkbox_product_th"><input type="checkbox"
+                        name="checkbox" id="checkbox_product_th" class="admin__table_checkbox _all"></label></th>
+                  <th class="admin__table_title _active-1" data-sorting="id">id<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="name">Название<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="price">Цена<span class="_icon-arrow"></span>
+                  </th>
+                  <th class="admin__table_title" data-sorting="price_card">Цена по карте<span
+                      class="_icon-arrow"></span>
+                  </th>
+                  <th class="admin__table_title" data-sorting="rating">Рейтинг<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="img">Изображение<span class="_icon-arrow"></span>
+                  </th>
+                  <th class="admin__table_title" data-sorting="discount">Скидка<span class="_icon-arrow"></span>
+                  </th>
+                  <th class="admin__table_title" data-sorting="typeId">Тип ID<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="brandId">Бренд ID<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="createdAt">Дата создание<span class="_icon-arrow"></span>
+                  </th>
+                  <th class="admin__table_title" data-sorting="updatedAt">Дата обновления<span
+                      class="_icon-arrow"></span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="admin__table_tbody">
+              </tbody>
+            </table>
+          </div>
+          <div class="admin__wrapper-pagination">
+          </div>
+        </div>
+        <div class="admin__content" id="brand">
+          <h2 class="admin__title">Бренды</h2>
+          <div class="admin__menu">
+            <input type="text" name="search" id="search_brand" class="admin__menu_input _input" autocomplete="off"
+              placeholder="поиск">
+            <div>
+              <button class="admin__menu_button delete" data-delete="brand">Удалить</button>
+              <button class="admin__menu_button update" data-updata="brand">Редактировать</button>
+              <button class="admin__menu_button create" data-create="brand">Добавить бренд</button>
+            </div>
+          </div>
+          <div class="admin__wrapper-table">
+            <table class="admin__table">
+              <thead class="admin__table_thead">
+                <tr class="admin__table_row">
+                  <th class="admin__table_title _checkbox"><label for="checkbox_brand_th"><input type="checkbox"
+                        name="checkbox" id="checkbox_brand_th" class="admin__table_checkbox _all"></label></th>
+                  <th class="admin__table_title _active-1" data-sorting="id">id<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="img">Изображение<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="name">Название<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="createdAt">Дата создания<span class="_icon-arrow"></span>
+                  </th>
+                  <th class="admin__table_title" data-sorting="updatedAt">Дата обновления<span
+                      class="_icon-arrow"></span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="admin__table_tbody">
+
+              </tbody>
+            </table>
+          </div>
+          <div class="admin__wrapper-pagination">
+          </div>
+        </div>
+        <div class="admin__content" id="type">
+          <h2 class="admin__title">Типы</h2>
+          <div class="admin__menu">
+            <input type="text" name="search" id="search_type" class="admin__menu_input _input" autocomplete="off"
+              placeholder="поиск">
+            <div>
+              <button class="admin__menu_button delete" data-delete="type">Удалить</button>
+              <button class="admin__menu_button update" data-updata="type">Редактировать</button>
+              <button class="admin__menu_button create" data-create="type">Добавить тип</button>
+            </div>
+          </div>
+          <div class="admin__wrapper-table">
+            <table class="admin__table">
+              <thead class="admin__table_thead">
+                <tr class="admin__table_row">
+                  <th class="admin__table_title _checkbox"><label for="checkbox_type_th"><input type="checkbox"
+                        name="checkbox" id="checkbox_type_th" class="admin__table_checkbox _all"></label></th>
+                  <th class="admin__table_title _active-1" data-sorting="id">id<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="img">Изображение<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="name">Название<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="createdAt">Дата создания<span class="_icon-arrow"></span>
+                  </th>
+                  <th class="admin__table_title" data-sorting="updatedAt">Дата обновления<span
+                      class="_icon-arrow"></span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="admin__table_tbody">
+
+              </tbody>
+            </table>
+          </div>
+          <div class="admin__wrapper-pagination">
+          </div>
+        </div>
+        <div class="admin__content" id="feedback">
+          <h2 class="admin__title">Отзывы</h2>
+          <div class="admin__menu">
+            <input type="text" name="search" id="search_fedback" class="admin__menu_input _input" autocomplete="off"
+              placeholder="поиск">
+            <div>
+              <button class="admin__menu_button delete" data-delete="type">Удалить</button>
+              <button class="admin__menu_button update" data-updata="type">Редактировать</button>
+            </div>
+          </div>
+          <div class="admin__wrapper-table">
+            <table class="admin__table">
+              <thead class="admin__table_thead">
+                <tr class="admin__table_row">
+                  <th class="admin__table_title _checkbox"><label for="checkbox_fedback_th"><input type="checkbox"
+                        name="checkbox" id="checkbox_fedback_th" class="admin__table_checkbox _all"></label></th>
+                  <th class="admin__table_title _active-1" data-sorting="id">id</th>
+                  <th class="admin__table_title" data-sorting="name_user">Имя покупателя<span
+                      class="_icon-arrow"></span>
+                  </th>
+                  <th class="admin__table_title" data-sorting="feedback_user">Отзыв<span class="_icon-arrow"></span>
+                  </th>
+                  <th class="admin__table_title" data-sorting="userDatumId">Id покупателя<span
+                      class="_icon-arrow"></span>
+                  </th>
+                  <th class="admin__table_title" data-sorting="productId">Id продукта<span class="_icon-arrow"></span>
+                  </th>
+                  <th class="admin__table_title" data-sorting="createdAt">Дата создания<span class="_icon-arrow"></span>
+                  </th>
+                  <th class="admin__table_title" data-sorting="updatedAt">Дата обновления<span
+                      class="_icon-arrow"></span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="admin__table_tbody">
+
+              </tbody>
+            </table>
+          </div>
+          <div class="admin__wrapper-pagination">
+          </div>
+        </div>
+        <div class="admin__content" id="user">
+          <h2 class="admin__title">Пользователи</h2>
+          <div class="admin__menu">
+            <input type="text" name="search" id="search_user" class="admin__menu_input _input" autocomplete="off"
+              placeholder="поиск">
+            <div>
+              <button class="admin__menu_button delete" data-delete="user">Удалить</button>
+              <button class="admin__menu_button update" data-updata="user">Редактировать</button>
+              <button class="admin__menu_button create" data-create="user">Добавить пользователи</button>
+            </div>
+          </div>
+          <div class="admin__wrapper-table">
+            <table class="admin__table">
+              <thead class="admin__table_thead">
+                <tr class="admin__table_row">
+                  <th class="admin__table_title _checkbox"><label for="checkbox_user_th"><input type="checkbox"
+                        name="checkbox" id="checkbox_user_th" class="admin__table_checkbox _all"></label></th>
+                  <th class="admin__table_title _active-1" data-sorting="id">id<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="phone">Телефон<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="name">Имя<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="surname">Фамилия<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="mail">Почта<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="date_birth">Дата рождения<span
+                      class="_icon-arrow"></span>
+                  </th>
+                  <th class="admin__table_title" data-sorting="gender">Пол<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="region">Область<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="city">Город<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="discount_card">Скидочная карта<span
+                      class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="role">Роль<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="createdAt">Дата регистрации<span
+                      class="_icon-arrow"></span>
+                  </th>
+                  <th class="admin__table_title" data-sorting="updatedAt">Дата обновления<span
+                      class="_icon-arrow"></span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="admin__table_tbody">
+
+              </tbody>
+            </table>
+          </div>
+          <div class="admin__wrapper-pagination">
+          </div>
+        </div>
+        <div class="admin__content" id="article">
+          <h2 class="admin__title">Статьи</h2>
+          <div class="admin__menu">
+            <input type="search" name="search" id="search_article" class="admin__menu_input _input" autocomplete="off"
+              placeholder="поиск">
+            <div>
+              <button class="admin__menu_button delete" data-delete="article">Удалить</button>
+              <button class="admin__menu_button update" data-updata="article">Редактировать</button>
+              <button class="admin__menu_button create" data-create="article">Добавить статью</button>
+            </div>
+          </div>
+          <div class="admin__wrapper-table">
+            <table class="admin__table">
+              <thead class="admin__table_thead">
+                <tr class="admin__table_row">
+                  <th class="admin__table_title _checkbox"><label for="checkbox_user_th"><input type="checkbox"
+                        name="checkbox" id="checkbox_user_th" class="admin__table_checkbox _all"></label></th>
+                  <th class="admin__table_title _active-1" data-sorting="id">id<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="title">Заголовок<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="text">Текст<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="img">Изображение<span class="_icon-arrow"></span></th>
+                  <th class="admin__table_title" data-sorting="createdAt">Дата создания<span class="_icon-arrow"></span>
+                  </th>
+                  <th class="admin__table_title" data-sorting="updatedAt">Дата обновления<span class="_icon-arrow">
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="admin__table_tbody">
+
+              </tbody>
+            </table>
+          </div>
+          <div class="admin__wrapper-pagination">
+          </div>
+        </div>
+        <div class="background-loader"></div>
+      </main>
+    </div>
+    <div class="notification">
+      <span class="notification__span"></span>
+    </div>
+  </div>
+</body>
+<script src="assets/libs/inputMask/inputmask.min.js"></script>
+<script src="js/main.min.js"></script>
+<script src="js/admin.min.js"></script>
+
+</html>
