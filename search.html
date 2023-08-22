@@ -4,12 +4,12 @@
 	<title>Результат поиска | Интернет-магазин Северяночка</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/libs/Swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="assets/libs/Choices/choices.min.css">
 	<link rel="stylesheet" href="assets/libs/nouiSlider/nouislider.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/svg/favicon.ico">
 </head>
 
 <body>
@@ -96,23 +96,29 @@
 	<div class="header-catalog">
 		<nav class="header-catalog__menu container">
 			<ul class="header-catalog__list">
-				<li class="header-catalog__item"><a href="html/meat-poultry-sausage.html" class="header-catalog__link">Мясо.
-						птица. колбаса</a></li>
-				<li class="header-catalog__item"><a href="html/meat-poultry-sausage.html" class="header-catalog__link">Мясо.
-						птица. колбаса</a></li>
-				<li class="header-catalog__item"><a href="html/meat-poultry-sausage.html" class="header-catalog__link">Мясо.
-						птица. колбаса</a></li>
-				<li class="header-catalog__item"><a href="html/meat-poultry-sausage.html" class="header-catalog__link">Мясо.
-						птица. колбаса</a></li>
-				<li class="header-catalog__item"><a href="html/meat-poultry-sausage.html" class="header-catalog__link">Мясо.
-						птица. колбаса</a></li>
-				<li class="header-catalog__item"><a href="html/meat-poultry-sausage.html" class="header-catalog__link">Мясо.
-						птица. колбаса</a></li>
+
 			</ul>
 		</nav>
 	</div>
 </header>
-    <main class="main"></main>
+    <main class="main">
+      <div class="container">
+        <div class="search-result">
+          <div class="search-result__body">
+            <h1 class="search-result__title">Результат поиска</h1>
+            <div class="search-result__respons-wrapper">
+              <span class="search-result__respons search-result-span">по запросу -</span>
+              <span class="search-result__value search-result-span"></span>
+              <span class="search-result__error search-result-span" style="display: none;">- Сожалеем, но ничего не
+                найдено.</span>
+            </div>
+            <div class="grid-container search-result__content">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer class="footer">
 	<div class="container">
 		<div class="footer__content">
@@ -146,6 +152,7 @@
     <div class="menu-fixed"></div>
     <div class="btn-up">↑</div>
   </div>
+  <script src="js/search.min.js"></script>
   <script src="assets/libs/inputMask/inputmask.min.js"></script>
 <script src="js/main.min.js"></script>
 </body>

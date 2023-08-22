@@ -352,7 +352,6 @@ body._lock {
 .header {
   position: relative;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
-  z-index: 1;
 }
 
 .header__admin {
@@ -526,6 +525,7 @@ body._lock {
   opacity: 0;
   visibility: hidden;
   transition: 0.2s;
+  z-index: 5;
 }
 
 .search_result._active {
@@ -5534,7 +5534,7 @@ body._lock {
 }
 
 .admin__menu_input {
-  max-width: 300px;
+  max-width: 320px;
 }
 
 .admin__menu_input::placeholder {
@@ -5591,11 +5591,27 @@ body._lock {
   visibility: visible;
 }
 
+.admin__search-block {
+  position: relative;
+  width: 320px;
+}
+
+.admin__search-block form {
+  position: relative;
+}
+
+.admin__search-block form .btn-search {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  font-size: 24px;
+  transform: translate(0, -50%);
+}
+
 .admin__wrapper-table {
   overflow: auto;
   width: 100%;
   padding-bottom: 4px;
-  max-height: 550px;
 }
 
 .admin__wrapper-table::-webkit-scrollbar {
